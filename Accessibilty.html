@@ -7,14 +7,17 @@
     <title>Accessibility Tag</title>
   </head>
   <body>
-    <input type="text" value="Enter your user name" />
-    <input type="password" />
-    <input type="date" />
+    <input
+      type="text"
+      placeholder="Enter your user name"
+      aria-label="username"
+    />
+    <input type="password" aria-label="password" />
+    <input type="date" aria-label="date" />
 
-    <textarea>
-          Enter your story
-      </textarea
-    >
-    <input type="submit" />
+    <textarea aria-label="story" placeholder="Enter your story"> </textarea>
+
+    <button aria-label="send email">send</button>
+    <input type="submit" aria-label="submit form" />
   </body>
 </html>
